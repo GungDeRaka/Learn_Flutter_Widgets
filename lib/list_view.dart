@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-/**
- * !disini kita belajar setstate, dan juga penggunaan increment dan decrement
- * ?app di file ini cukup keren
- */
+/// !pada file ini saya mulai memahami setstate,
+/// !dan juga penggunaan increment dan decrement
 void main() => runApp(ListPiew());
 
 class ListPiew extends StatefulWidget {
