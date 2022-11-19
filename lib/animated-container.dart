@@ -35,6 +35,7 @@ class _KontenerAnimasiState extends State<KontenerAnimasi> {
                 duration: Duration(seconds: 1),
                 width: 50.0+random.nextInt(101),
                 height: 50.0+random.nextInt(101),
+                
                     ),
             )),
       ),
@@ -43,23 +44,3 @@ class _KontenerAnimasiState extends State<KontenerAnimasi> {
 }
 
 
-
-
-// void main()=> runApp(KontenerAnimasi());
-
-// class KontenerAnimasi extends StatefulWidget {
-//   const KontenerAnimasi({Key key}) : super(key: key);
-
-//   @override
-//   State<KontenerAnimasi> createState() => _KontenerAnimasiState();
-// }
-
-// class _KontenerAnimasiState extends State<KontenerAnimasi> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: "jaya jaya",
-//       home: Scaffold(appBar: AppBar(title: Text('belajar kontener animasi'),)),
-//     );
-//   }
-// }
