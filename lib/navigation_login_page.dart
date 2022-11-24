@@ -2,7 +2,7 @@ import 'package:belajar_widget_flutter/animated-container.dart';
 import 'package:flutter/material.dart';
 
 class MyLoginPage extends StatelessWidget {
-  const MyLoginPage({Key key}) : super(key: key);
+  const MyLoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(Steful());
 
 class Steful extends StatefulWidget {
-  Steful({Key key}) : super(key: key);
+  Steful({Key? key}) : super(key: key);
 
   @override
   State<Steful> createState() => _StefulState();
@@ -27,7 +27,7 @@ class _StefulState extends State<Steful> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Stateful Widget Demo'),
+          title: const Text('Stateful Widget Demo'),
         ),
         body: Center(
             child: Column(

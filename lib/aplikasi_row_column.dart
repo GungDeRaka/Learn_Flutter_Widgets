@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(RowColumn());
 
 class RowColumn extends StatelessWidget {
-  const RowColumn({Key key}) : super(key: key);
+  const RowColumn({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

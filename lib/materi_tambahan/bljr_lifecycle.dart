@@ -5,7 +5,7 @@ void main() {
 }
 
 class LCWidget extends StatefulWidget {
-  const LCWidget({Key key}) : super(key: key);
+  const LCWidget({Key? key}) : super(key: key);
 
   @override
   State<LCWidget> createState() => _LCWidgetState();

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(LatContainer());
 
 class LatContainer extends StatelessWidget {
-  const LatContainer({Key key}) : super(key: key);
+  const LatContainer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

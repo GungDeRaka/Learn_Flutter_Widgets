@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(ListPiew());
 
 class ListPiew extends StatefulWidget {
-  const ListPiew({Key key}) : super(key: key);
+  const ListPiew({Key? key}) : super(key: key);
 
   @override
   State<ListPiew> createState() => _ListPiewState();

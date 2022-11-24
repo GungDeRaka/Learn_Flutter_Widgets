@@ -1,12 +1,10 @@
 import 'dart:math';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(KontenerAnimasi());
+void main() => runApp(const KontenerAnimasi());
 
 class KontenerAnimasi extends StatefulWidget {
-  const KontenerAnimasi({Key key}) : super(key: key);
+  const KontenerAnimasi({Key? key}) : super(key: key);
 
   @override
   State<KontenerAnimasi> createState() => _KontenerAnimasiState();

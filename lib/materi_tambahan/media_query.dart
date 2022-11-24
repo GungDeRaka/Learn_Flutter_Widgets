@@ -14,7 +14,7 @@ class LearnResponsive extends StatelessWidget {
 }
 
 class MainPage extends StatefulWidget {
-  MainPage({Key key}) : super(key: key);
+  MainPage({Key? key}) : super(key: key);
 
   @override
   State<MainPage> createState() => _MainPageState();

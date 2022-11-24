@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(Anonymous());
 
 class Anonymous extends StatefulWidget {
-  Anonymous({Key key}) : super(key: key);
+  Anonymous({Key? key}) : super(key: key);
 
   @override
   State<Anonymous> createState() => _AnonymousState();
