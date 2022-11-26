@@ -1,18 +1,21 @@
-import 'package:belajar_widget_flutter/navigation_login_page.dart';
+import 'package:belajar_widget_flutter/widgets/navigation_login_page.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/bottom_sheet.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  late MyBottomSheet mbs;
+  MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyVeryMainPage(),
+      home: MyBottomSheet(),
     );
   }
 }

@@ -1,4 +1,4 @@
-import 'package:belajar_widget_flutter/animated-container.dart';
+import 'package:belajar_widget_flutter/widgets/animated-container.dart';
 import 'package:flutter/material.dart';
 
 class MyLoginPage extends StatelessWidget {

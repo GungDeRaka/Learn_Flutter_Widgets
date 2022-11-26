@@ -21,7 +21,7 @@ class _LatihanTabBarState extends State<LatihanTabBar>
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.teal[500],
+          backgroundColor: Colors.black87,
           bottom: TabBar(
             isScrollable: true,
             indicatorSize: TabBarIndicatorSize.label,
