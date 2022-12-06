@@ -1,3 +1,4 @@
+import 'package:belajar_widget_flutter/widgets/maping_list.dart';
 import 'package:belajar_widget_flutter/widgets/navigation_login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -13,12 +14,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+
       debugShowCheckedModeBanner: false,
-      home: MyBottomSheet(),
+      home: MappingList(),
     );
   }
 }
+
+MappingList mappingList = MappingList() ;
 
 class MyVeryMainPage extends StatelessWidget {
   const MyVeryMainPage({
