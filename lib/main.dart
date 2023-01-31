@@ -1,11 +1,13 @@
+import 'package:belajar_widget_flutter/widgets/gradient_text.dart';
 import 'package:belajar_widget_flutter/widgets/maping_list.dart';
 import 'package:belajar_widget_flutter/widgets/navigation_login_page.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/bottom_sheet.dart';
+import 'widgets/sliver_widgets.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,15 +16,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MappingList(),
+      home: LearnSliverWidgets(),
     );
   }
 }
 
-MappingList mappingList = MappingList() ;
+MappingList mappingList = MappingList();
 
 class MyVeryMainPage extends StatelessWidget {
   const MyVeryMainPage({
@@ -32,7 +33,7 @@ class MyVeryMainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar( 
+      appBar: AppBar(
         centerTitle: true,
         title: const Text("Aplikasi Hello World"),
       ),
@@ -43,24 +44,32 @@ class MyVeryMainPage extends StatelessWidget {
             Container(
               color: Colors.lightBlue,
               width: 150,
-              height: 50,
-              child: const Center(child: Text("Hello World", textAlign: TextAlign.center,)),
-            
+              height: 200,
+              child: const Center(
+                  child: GradientText(
+                      text: "Selamat\nTahun Baru",
+                      gradient: LinearGradient(colors: [
+                        Colors.red,
+                        Colors.blue,
+                      ]))),
             ),
-            const SizedBox(height: 50,),
+            const SizedBox(
+              height: 50,
+            ),
             SizedBox(
               height: 40,
               width: 50,
               child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.blueGrey,
-              ),
-              onPressed: () {
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (_){
-                  return const MyLoginPage();
-                }));
-              },
-              child: const Text("Save"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueGrey,
+                ),
+                onPressed: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (_) {
+                    return const MyLoginPage();
+                  }));
+                },
+                child: const Text("Save"),
               ),
             )
           ],
